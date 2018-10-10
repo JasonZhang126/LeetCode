@@ -6,8 +6,12 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+ 
  /*
-  * wrong solution
+  * Wrong Solution
+  * 思路：遍历两链表，求数字之和，再顺序尾插简历output链表。
+  * input: [5] [5]; excepted: [1,0]; output: [10]
+  * 该方法无法用于判断数字求和后进位的情况。  
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
